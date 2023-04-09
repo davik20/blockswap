@@ -53,14 +53,10 @@ const Login = (props: Props) => {
         </Button> */}
 
       <div className={styles.p}>
-       By connecting a wallet, you agree to Blockswap Labs
-        <span>
-          <a rel="noreferrer" target="_blank" href="https://lsd.joinstakehouse.com/terms">
-            Terms of Service
-          </a>
-        </span>
-        and acknowledge that you have read and understand the
-        <span>
+       By connecting a wallet, you agree to Blockswap Labs <span>
+          <a rel="noreferrer" target="_blank" href="https://lsd.joinstakehouse.com/terms">  Terms of Service
+          </a>  </span>
+        and acknowledge that you have read and understand the <span>
           <a
           rel="noreferrer"
             target="_blank"
