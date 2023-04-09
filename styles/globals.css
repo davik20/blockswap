@@ -1,10 +1,7 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
 @font-face {
-  font-family: "LCD-solid"; /* Define a name for the font */
-  src: url("/font/LcdSolid.ttf") format("truetype"); /* Specify the URL or relative path to the .ttf file */
+  font-family: "LCD-solid";
+  src: url("/font/LcdSolid.ttf") format("truetype"); 
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,600&display=swap');
@@ -52,6 +49,7 @@
   --color-nft-background: #141A25;
   --container-width: 1200px;
   --border-radius: .5rem;
+  --box-shadow: 0 0 10px 1px rgba(255, 255, 255, .1);
 }
 
 html {
@@ -82,16 +80,6 @@ a {
   text-decoration: none;
 }
 
-
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.is-visible {
-  opacity: 1;
-}
 
 
 

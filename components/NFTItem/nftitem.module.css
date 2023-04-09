@@ -1,6 +1,5 @@
 .container {
     width: 28rem;
-    height: 40rem;
     padding: 4rem 3.2rem;
     background-color: var(--color-nft-background);
     border-radius: .8rem;
@@ -15,13 +14,12 @@
 .header h1 {
     font-size: 6rem;
     font-family: LCD-solid;
-    color: var(--color-primary-300);
+    color: #65E2A2;
 }
 
 .body {
     margin-top: .8rem;
     height: 14rem;
-    /* background-color: red; */
 }
 
 .property {
@@ -29,6 +27,7 @@
     font-size: 1.4rem;
     height: 2.8rem;
     align-items: center;
+    /* letter-spacing: 1.4px; */
 }
 
 .propertyName {

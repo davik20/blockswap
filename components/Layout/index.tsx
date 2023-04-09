@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { ReactNode } from "react";
-import { useAccount } from "wagmi";
 import styles from './layout.module.css'
 import WalletDropdown from "../WalletDropdown";
 interface Props {
@@ -11,11 +9,8 @@ interface Props {
 }
 
 export default function Layout(props: Props) {
-  const { children, showWalletOptions, setShowWalletOptions } = props;
+  const { children} = props;
 
-  const [{ data: accountData, loading }, disconnect] = useAccount({
-    fetchEns: true,
-  });
 
 
 

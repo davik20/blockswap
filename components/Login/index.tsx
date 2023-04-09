@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "../Button";
 import styles from "./login.module.css";
-import { useAccount, useConnect } from "wagmi";
+import { useConnect } from "wagmi";
 import { toast } from "react-toastify";
 type Props = {};
 
@@ -41,16 +41,6 @@ const Login = (props: Props) => {
         }
       })}
 
-      {/* <Button 
-        img_icon={"/images/metamask.svg"}
-        >
-            MetaMask
-        </Button>
-        <Button 
-        img_icon={"/images/walletConnect.svg"}
-        >
-            Wallet Connect
-        </Button> */}
 
       <div className={styles.p}>
        By connecting a wallet, you agree to Blockswap Labs <span>

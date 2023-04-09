@@ -1,6 +1,5 @@
 import React, { ReactChildren } from 'react'
 import styles from './button.module.css'
-import Image from 'next/image'
 
 type Props = {
     img_icon?:any;
