@@ -35,7 +35,7 @@ const Login = (props: Props) => {
                 c.id === "injected" ? "metamask" : c.id
               }.svg`}
             >
-              {c.name}
+              {c.name === "injected" ? "MetaMask" : c.name}
             </Button>
           );
         }
