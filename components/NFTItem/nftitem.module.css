@@ -27,12 +27,14 @@
     font-size: 1.4rem;
     height: 2.8rem;
     align-items: center;
+
     /* letter-spacing: 1.4px; */
 }
 
 .propertyName {
     margin-right:.5rem;
     line-height: 2rem;
+    color: #AFB3BA;
 }
 
 .finished {

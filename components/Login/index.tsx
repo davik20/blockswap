@@ -24,7 +24,7 @@ const Login = (props: Props) => {
               onClick={async() => {
               let {data, error}:any =  await connect(c);
               if(data && data?.account){
-                toast('Connected')
+                toast.success('Connected')
               }else {
                 toast.error(error.message)
               }
