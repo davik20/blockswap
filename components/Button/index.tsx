@@ -16,7 +16,7 @@ const Button = ({children, img_icon, style, onClick}: Props) => {
   
     <button onClick={onClick} style={style? style: {}} className={styles.container}>
         {
-            img_icon && <Image className={styles.img} src={img_icon}/>
+            img_icon && <img className={styles.img} src={img_icon}/>
         }
         {children}
     </button>
