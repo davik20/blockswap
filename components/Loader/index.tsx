@@ -1,5 +1,8 @@
 import {Stack, Skeleton} from '@mui/material'
 
+interface Props {
+}
+
 export default function Loader(props: Props) {
 
   return (

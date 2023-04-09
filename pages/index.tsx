@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import { useAccount, useBalance, useConnect } from "wagmi";
-import { Button, Layout, Loader, WalletOptionsModal } from "../components";
+import { Button, Layout, Loader } from "../components";
 import Hero from "../components/Hero/Hero";
 import Login from "../components/Login";
 import NFTItem from "../components/NFTItem";
@@ -21,11 +21,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <WalletOptionsModal
-        open={showWalletOptions}
-        setOpen={setShowWalletOptions}
-      />
-
       <Layout
         showWalletOptions={showWalletOptions}
         setShowWalletOptions={setShowWalletOptions}

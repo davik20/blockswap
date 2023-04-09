@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { ReactNode } from "react";
-import { Button, MenuDropdown, WalletOptionsModal } from "..";
 import { useAccount } from "wagmi";
 import styles from './layout.module.css'
 import WalletDropdown from "../WalletDropdown";
@@ -27,11 +26,6 @@ export default function Layout(props: Props) {
         <meta name="description" content="Blockswap Bid" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <WalletOptionsModal
-        open={showWalletOptions}
-        setOpen={setShowWalletOptions}
-      />
 
       <div className={styles.container}>
         <nav className={styles.nav}>
