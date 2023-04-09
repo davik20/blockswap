@@ -7,7 +7,6 @@ import Login from "../components/Login";
 import NFTItem from "../components/NFTItem";
 import NFTList from "../components/NFTList";
 
-
 const Home: NextPage = () => {
   const [showWalletOptions, setShowWalletOptions] = useState(false);
   const [{ data: accountData, loading: accountLoading }] = useAccount();
@@ -20,11 +19,6 @@ const Home: NextPage = () => {
     disconnect,
   ] = useConnect();
 
-
-
-  const loading = (accountLoading || balanceLoading) && !balanceData;
-
-
   return (
     <>
       <WalletOptionsModal
@@ -36,13 +30,14 @@ const Home: NextPage = () => {
         showWalletOptions={showWalletOptions}
         setShowWalletOptions={setShowWalletOptions}
       >
-        {connectData.connected && <>
-           <Hero/>
-           <NFTList/>
+        {connectData.connected && (
+          <>
+            <Hero />
+            <NFTList />
+          </>
+        )}
 
-        </>}
-
-     {!connectData.connected  &&  <Login/>}
+        {!connectData.connected && <Login />}
       </Layout>
     </>
   );

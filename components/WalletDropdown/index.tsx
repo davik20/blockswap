@@ -30,13 +30,11 @@ const WalletDropdown = (props: Props) => {
 
   const stuff = useConnect();
 
-  console.log("stuff", stuff);
 
   let address = accountData?.address || "";
 
   useEffect(() => {
     if (connector) {
-      console.log(connector, "connector");
       connector.onDisconnect = () => {
         console.log("disconnecting");
       };
@@ -46,14 +44,11 @@ const WalletDropdown = (props: Props) => {
   return (
     <div className={styles.container}>
       {connected ? (
-        <div
+      <div
           className={`${styles.menu} ${showDropdown && styles.clicked}`}
-          onClick={() =>{
-    
-              setShowDropdown(!showDropdown);
-            }
-         
-          }
+          onClick={() => {
+            setShowDropdown(!showDropdown);
+          }}
         >
           <div className={styles.active}></div>
           <p>{`${address.slice(0, 5)}...${address.slice(36, 42)}`} </p>
@@ -68,42 +63,43 @@ const WalletDropdown = (props: Props) => {
 
       {connected && showDropdown && (
         <div ref={dropDownRef} className={styles.dropDown}>
-            <div className={styles.section}>
-              <div
-                onClick={() => {
-                  navigator.clipboard.writeText(address);
-                  toast("Copied to clipboard");
-                  setShowDropdown(false);
-                }}
-              >
-                {" "}
-                <ContentCopyIcon />
-                <p>Copy address</p>
-              </div>
-              <div
-                onClick={() => {
-                  window.open(
-                    `https://etherscan.io/address/${address}`,
-                    "_blank"
-                  );
-                  setShowDropdown(false);
-                }}
-              >
-                <LaunchIcon />
-                <p>Open in etherscan</p>
-              </div>
-              <i className={styles.divider}></i>
-              <div
-                onClick={() => {
-                  disconnect();
-                  setShowDropdown(false);
-                  // console.log('disconnecting')
-                }}
-              >
-                <CancelIcon />
-                <p>Disconnect</p>
-              </div>
+          <div className={styles.section}>
+            <div
+              onClick={() => {
+                navigator.clipboard.writeText(address);
+                toast("Copied to clipboard");
+                setShowDropdown(false);
+              }}
+            >
+              {" "}
+              <ContentCopyIcon />
+              <p>Copy address</p>
             </div>
+            <div
+              onClick={() => {
+                window.open(
+                  `https://etherscan.io/address/${address}`,
+                  "_blank"
+                );
+                setShowDropdown(false);
+              }}
+            >
+              <LaunchIcon />
+              <p>Open in etherscan</p>
+            </div>
+            <i className={styles.divider}></i>
+            <div
+              onClick={() => {
+                disconnect();
+                setShowDropdown(false);
+                toast.success('Disconnected')
+            
+              }}
+            >
+              <CancelIcon />
+              <p>Disconnect</p>
+            </div>
+          </div>
         </div>
       )}
     </div>

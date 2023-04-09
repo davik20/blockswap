@@ -1,11 +1,12 @@
 .container {
     border-radius: 4rem;
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem;
     padding: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid var(--color-grey-500);
+    border: 1px solid var(--color-grey-500);
     font-size: 1.6rem;
     cursor: pointer;
     background: none;
@@ -13,22 +14,15 @@
     box-shadow: 0 0px 2px 1px rgba(255, 255, 255, .1);
 }
 
-
-
-
 .container:active {
     box-shadow: 0 0 0px 0 rgba(255, 255, 255, .1);
 }
 
 .container:hover {
-     background-color: var(--color-grey-900);
-
+    background-color: var(--color-grey-900);
 }
-
-
 
 .img {
-    margin-right: 1rem;;
-    
+    margin-right: 1rem;
+    max-width: 2.4rem;
 }
-

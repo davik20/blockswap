@@ -5,6 +5,7 @@ import { fetchData } from "../../lib/graphClient";
 import { FetchTickers } from "../../lib/queries";
 import { Skeleton, Stack } from "@mui/material";
 import Loader from '../../components/Loader'
+import { toast } from "react-toastify";
 
 type Props = {};
 
@@ -26,7 +27,6 @@ const NFTList = (props: Props) => {
     }));
     try {
       fetchData(FetchTickers).then(res => {
-        console.log(res);
         setNfts({
         data: res.tickers,
           loading: false,
@@ -38,6 +38,7 @@ const NFTList = (props: Props) => {
         ...prev,
         error: error,
       }));
+      toast.error("An error occurred with fetching")
     }
   }, []);
 
@@ -51,8 +52,8 @@ const NFTList = (props: Props) => {
          <Loader/>
          </>
 }
-      {nfts.error && <div>Error: {nfts.error}</div>}
-        {nfts.data && nfts.data.map((nft, i) => (
+      {nfts.error && <div>An error occurred</div>}
+        {!nfts.loading && nfts.data && nfts.data.map((nft, i) => (
           <NFTItem data={nft}  key={i} />
         ))}
 

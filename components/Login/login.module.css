@@ -1,6 +1,6 @@
 .container {
 /* width: 40%; */
-padding: 5rem  0;
+padding: 5rem  1rem;
 margin: auto;
 display: flex;
 flex-direction: column;
@@ -23,7 +23,8 @@ box-shadow: 0 0 10px 1px rgba(255, 255, 255, .1);
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    width: 35rem;
+    max-width: 35rem;
+    width: 100%;
     line-height: 1.9rem;
     color: var(--color-grey-300);
 }

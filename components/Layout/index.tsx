@@ -23,8 +23,8 @@ export default function Layout(props: Props) {
   return (
     <div>
       <Head>
-        <title>NextJS wagmi</title>
-        <meta name="description" content="NextJS and wagmi template" />
+        <title>BlockSwap</title>
+        <meta name="description" content="Blockswap Bid" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

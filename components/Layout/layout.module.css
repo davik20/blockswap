@@ -35,7 +35,23 @@
   padding-top: 10rem;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 @media (max-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+  
+  .header img {
+    width: 10rem;
+  }
+  
+}
+
+@media (max-width: 569px) {
   .container {
     padding: 0 1rem;
   }

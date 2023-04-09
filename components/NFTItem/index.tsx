@@ -30,12 +30,10 @@ const NFTItem = ({data}: Props) => {
   const [imgUrl, setImgUrl] = React.useState<string>("");
   const {id, name, imageURI, shbBid, numberOfBidsReceived, biddingEnd, bidder} = data;
 
-  console.log(data)
   
   useEffect(() => {
     try {
       fetchData(FetchTicker, {id}).then(res => {
-        // console.log(res.ticker);
         // setImgUrl(res.ticker.imageUrl);
       });
     } catch (error) {
