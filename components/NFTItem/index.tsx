@@ -56,7 +56,7 @@ const NFTItem = ({data}: Props) => {
           <div className={styles.propertyValue}> {numberOfBidsReceived}</div>
         </div>
         <div className={styles.property}>
-          <div className={styles.propertyName}>Winning Big:</div>
+          <div className={styles.propertyName}>Winning Bid:</div>
           <div className={styles.propertyValue}> {parseInt(fromWei(shbBid))} SHB</div>
         </div>
         <div className={styles.property}>
