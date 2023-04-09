@@ -52,16 +52,17 @@ const Login = (props: Props) => {
             Wallet Connect
         </Button> */}
 
-      <p className={styles.p}>
-        By connecting a wallet, you agree to Blockswap Labs'
+      <div className={styles.p}>
+       By connecting a wallet, you agree to Blockswap Labs
         <span>
-          <a target="_blank" href="https://lsd.joinstakehouse.com/terms">
+          <a rel="noreferrer" target="_blank" href="https://lsd.joinstakehouse.com/terms">
             Terms of Service
           </a>
         </span>
         and acknowledge that you have read and understand the
         <span>
           <a
+          rel="noreferrer"
             target="_blank"
             href="https://lsd.joinstakehouse.com/RiskDisclaimer"
           >
@@ -70,7 +71,7 @@ const Login = (props: Props) => {
           r
         </span>
         .
-      </p>
+      </div>
     </div>
   );
 };
