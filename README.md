@@ -8,12 +8,12 @@ This project is an NFT listing dashboard redesign for the Brand Central website,
 
 - Language: Typescript
 - Frontend Framework: NextJs
-- WalletConnect SDK: wagmi
-- Other Tools: ethersjs
+- WalletConnect SDK: wagmi, etherjs
+- Other Tools: graphq
 
 ## Approach and Implementation
 
-1. **Cloning the brand central page**: To clone the existing brand central page, I used the "Save As" feature in my web browser to download the HTML, CSS, and JavaScript files. I then imported these files into my project and made minor adjustments to the original structure to better suit the new design.
+1. **Cloning the brand central page**: To clone the existing brand central page, I closely examined the original page, taking note of the key components, and then recreated the structure using clean, semantic HTML markup, CSS, and typescript.
 
 
 2. **Creating a new theme for the NFT listing dashboard**: I started the design process by analyzing the brand identity and target audience of the website. I took inspiration from the provided Figma design and other modern NFT platforms. For the color scheme, I chose a dark theme with vibrant accent colors to create contrast and attract user attention. I used a clean Montserrat font to ensure legibility and improve the overall aesthetic. I fetched the latest URI artifacts using typescrit and displayed the NFT metadata in a visually appealing manner by creating custom cards with a hover effects.
@@ -26,20 +26,18 @@ To integrate MetaMask and WalletConnect, I used the wagmi library and the corres
 
 ## Usage Instructions
 
+1. Clone the repository: `git clone https://github.com/davik20/blockswap.git`
+2. Navigate to the project directory: `cd blockswa`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Access the dashboard at: `http://localhost:3000`
 
-
-1. Clone the repository: `git clone <REPO_URL>`
-2. Navigate to the project directory: `cd <PROJECT_DIRECTORY>`
-3. Install dependencies: `<DEPENDENCY_INSTALL_COMMAND>`
-4. Start the development server: `<DEV_SERVER_START_COMMAND>`
-5. Access the dashboard at: `http://localhost:<PORT>`
-
-Alternatively, view the live demo at: `<LIVE_DEMO_LINK>`
+Alternatively, view the live demo at: https://blockswapnft.netlify.app/
 
 ## Contributors
 
-- <YOUR_NAME> - [<YOUR_GITHUB_PROFILE_LINK> or <YOUR_CONTACT_INFORMATION>]
+- Onyeji Victor - https://github.com/davik20
 
 ## Acknowledgments
 
-Special thanks to Matt for assigning this hack challenge and providing valuable resources and guidance throughout the project.
+Special thanks to Matt for assigning this hack challenge and providing valuable resources for the project.
