@@ -13,7 +13,7 @@ This project is an NFT listing dashboard redesign for the Brand Central website,
 
 ## Approach and Implementation
 
-1. **Cloning the brand central page**: To clone the existing brand central page, I closely examined the original page, taking note of the key components, and then recreated the structure using clean, semantic HTML markup, CSS, and typescript.
+1. **Cloning the brand central page**: To clone the existing brand central page, I closely examined the original page, taking note of the key components, I also examined the main project's main theme, then recreated the structure using clean, semantic HTML markup, CSS, and typescript.
 
 
 2. **Creating a new theme for the NFT listing dashboard**: I started the design process by analyzing the brand identity and target audience of the website. I took inspiration from the provided Figma design and other modern NFT platforms. For the color scheme, I chose a dark theme with vibrant accent colors to create contrast and attract user attention. I used a clean Montserrat font to ensure legibility and improve the overall aesthetic. I fetched the latest URI artifacts using typescrit and displayed the NFT metadata in a visually appealing manner by creating custom cards with a hover effects.
@@ -27,7 +27,7 @@ To integrate MetaMask and WalletConnect, I used the wagmi library and the corres
 ## Usage Instructions
 
 1. Clone the repository: `git clone https://github.com/davik20/blockswap.git`
-2. Navigate to the project directory: `cd blockswa`
+2. Navigate to the project directory: `cd blockswap`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 5. Access the dashboard at: `http://localhost:3000`
