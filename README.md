@@ -1,42 +1,45 @@
-# Welcome to the NextJS wagmi starter template 👋
-Looking to get up and running with a Typescript / NextJS dApp as quickly as possible? You're in the right place! This repo serves as a minimal template for integrating the wagmi React hooks for Ethereum library with Typescript & NextJS. Due to its ease of customizability and extensibility, this template has been styled with the Tailwind CSS framework. Let's get to it!
-### Check out the live demo 👉 [NextJS wagmi](https://nextjs-wagmi.vercel.app/)
+# BlockSwap Bid View
 
-## Get up and running in 3 simple steps:
+## Introduction
 
-### 1. Create an app using this repo as the template
-```bash
-npx create-next-app@latest -e https://github.com/Seth-McKilla/nextjs-wagmi
-```
->Note: The above command automatically downloads and installs the dependencies so no "npm install" or "yarn add" required!
+This project is an NFT listing dashboard redesign for the Brand Central website, as part of a hack challenge. The main goal is to create a visually appealing and consistent user interface for the dashboard and implement wallet authentication using MetaMask and WalletConnect.
 
-### 2. Create a .env.local file within the root directory with the following environment variables
-```bash
-NEXT_PUBLIC_INFURA_ID=<insert infura id>
-```
->Note: Grab an Infura ID from the [Infura website](https://infura.io/)
+## Technologies and Tools
 
-### 3. Start the local development environment
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Language: Typescript
+- Frontend Framework: NextJs
+- WalletConnect SDK: wagmi
+- Other Tools: ethersjs
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Approach and Implementation
 
-That's it, you're all set!
+1. **Cloning the brand central page**: To clone the existing brand central page, I used the "Save As" feature in my web browser to download the HTML, CSS, and JavaScript files. I then imported these files into my project and made minor adjustments to the original structure to better suit the new design.
 
-## Resources
-To learn more about the packages used in this project, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [React Typescript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/) - helpful tips for using Typescript with React.
-- [wagmi Documentation](https://wagmi-xyz.vercel.app/) - learn about the wagmi React hooks for Ethereum.
-- [Tailwind CSS Documentation](https://tailwindcss.com/) - learn about the Tailwind CSS styling framework.
+2. **Creating a new theme for the NFT listing dashboard**: I started the design process by analyzing the brand identity and target audience of the website. I took inspiration from the provided Figma design and other modern NFT platforms. For the color scheme, I chose a dark theme with vibrant accent colors to create contrast and attract user attention. I used a clean Montserrat font to ensure legibility and improve the overall aesthetic. I fetched the latest URI artifacts using typescrit and displayed the NFT metadata in a visually appealing manner by creating custom cards with a hover effects.
 
-## Deploy on Vercel
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSeth-McKilla%2Fnextjs-wagmi&env=NEXT_PUBLIC_INFURA_ID)
+3. **Implementing wallet authentication with MetaMask and WalletConnect**:
+To integrate MetaMask and WalletConnect, I used the wagmi library and the corresponding WalletConnect connector. I set up the required configurations and created a custom "Connect Wallet" button to initiate the connection process. I handled different states, such as connecting, disconnecting, by updating the UI accordingly and providing clear feedback to the user.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Modifying the card layout according to the provided Figma design**: I adapted the card layout from the Figma design to fit the project's needs by creating responsive design adaptations for various screen sizes.I also adjusted the visual hierarchy by making the NFT title and image more prominent and using lighter shades for the secondary information.
+
+
+## Usage Instructions
+
+
+
+1. Clone the repository: `git clone <REPO_URL>`
+2. Navigate to the project directory: `cd <PROJECT_DIRECTORY>`
+3. Install dependencies: `<DEPENDENCY_INSTALL_COMMAND>`
+4. Start the development server: `<DEV_SERVER_START_COMMAND>`
+5. Access the dashboard at: `http://localhost:<PORT>`
+
+Alternatively, view the live demo at: `<LIVE_DEMO_LINK>`
+
+## Contributors
+
+- <YOUR_NAME> - [<YOUR_GITHUB_PROFILE_LINK> or <YOUR_CONTACT_INFORMATION>]
+
+## Acknowledgments
+
+Special thanks to Matt for assigning this hack challenge and providing valuable resources and guidance throughout the project.
