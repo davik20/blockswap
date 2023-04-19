@@ -1,0 +1,17 @@
+.container {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.block p:first-child{
+    margin-right: 1rem;
+    color:  var(--color-grey-item);
+}

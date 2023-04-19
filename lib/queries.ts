@@ -18,6 +18,7 @@ export const FetchTickers = gql`
     }
   }
 `;
+
 export const FetchTicker = gql`
   query TickerById($id: ID!) {
     ticker(id: $id) {

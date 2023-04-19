@@ -14,6 +14,7 @@ const Home: NextPage = () => {
     addressOrName: accountData?.address,
     watch: true,
   });
+
   const [
     { data: connectData, loading: connectDataLoading, error },
     disconnect,
