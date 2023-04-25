@@ -43,8 +43,6 @@
 .finished {
     color: #00ED7B;
 }
-
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
