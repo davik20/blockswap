@@ -9,8 +9,6 @@ const useClickOutside = <T extends RefType>(
   const savedHandler = useRef(handler);
 
   useEffect(() => {
-
-
     savedHandler.current = handler;
   }, [handler]);
 
